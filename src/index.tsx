@@ -5,7 +5,7 @@ import { Fragmenter } from "./fragments";
 import { ContentBlock } from "draft-js";
 
 function escapeRegExp(s: string) {
-  return s.replace(/[.*+\-?^${}()|[\]\\]/g, "\\$&");
+  return s.replace(/[.*+\-?^${}()|[\]\\]/ig, "\\$&");
 }
 
 function getProperties<T extends object>(t: T): T {
@@ -40,7 +40,7 @@ export function WordMatcher(
   const text = contentBlock.getText();
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
-    const regex = new RegExp(`\\b${escapeRegExp(item)}\\b`, "g");
+    const regex = new RegExp(`\\b${escapeRegExp(item)}\\b`, "ig");
     let matchArr = null;
     while ((matchArr = regex.exec(text)) !== null) {
       const match = matchArr[0];
@@ -60,7 +60,7 @@ export function SentenceMatcher(
   const text = contentBlock.getText();
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
-    const start = text.indexOf(item);
+    const start = text.toLowerCase().indexOf(item.toLowerCase());
     const end = start + item.length;
     if (start === -1) {
       continue;
