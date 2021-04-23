@@ -41,9 +41,9 @@ export function LengthMatcher(
     const text = contentBlock.getText();
     const wordsLongerThan = text.split(' ').filter(word => word.length > length);
     wordsLongerThan.forEach(word => {
-        const start = text.toLowerCase().indexOf(word.toLowerCase());
+        const start = text.indexOf(word);
         const end = start + word.length;
-        if (start === -1) {
+        if (start !== -1) {
             fragmenter.add(style, [start, end]);
         }
     })
