@@ -7,7 +7,8 @@ export interface MultiHighlightStyles {
     [key: string]: MultiHighlightStyle;
 }
 export interface MultiHighlightRule {
-    content: string[];
+    content?: string[];
+    length?: number;
     style: string;
     matcher: Function;
 }
@@ -15,6 +16,7 @@ export interface MultiHighlightConfig {
     rules: MultiHighlightRule[];
     styles: MultiHighlightStyles;
 }
+export declare function LengthMatcher(fragmenter: Fragmenter, length: number, style: string, contentBlock: ContentBlock): void;
 export declare function WordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
 export declare function SentenceMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
 export declare function MultiHighlightDecorator(config: MultiHighlightConfig): any;
