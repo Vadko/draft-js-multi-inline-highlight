@@ -18,5 +18,6 @@ export interface MultiHighlightConfig {
 }
 export declare function LengthMatcher(fragmenter: Fragmenter, length: number, style: string, contentBlock: ContentBlock): void;
 export declare function WordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
+export declare function ExactWordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
 export declare function SentenceMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
 export declare function MultiHighlightDecorator(config: MultiHighlightConfig): any;

@@ -69,6 +69,26 @@ export function WordMatcher(
     }
 }
 
+export function ExactWordMatcher(
+    fragmenter: Fragmenter,
+    items: string[],
+    style: string,
+    contentBlock: ContentBlock
+) {
+    const text = contentBlock.getText();
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        const regex = new RegExp(`\\b${escapeRegExp(item)}\\b`, "ig");
+        let matchArr = null;
+        while ((matchArr = regex.exec(text)) !== null) {
+            const match = matchArr[0];
+            const start = matchArr.index;
+            const end = start + match.length;
+            fragmenter.add(style, [start, end]);
+        }
+    }
+}
+
 export function SentenceMatcher(
     fragmenter: Fragmenter,
     items: string[],
