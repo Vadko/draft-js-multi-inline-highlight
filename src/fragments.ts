@@ -11,6 +11,7 @@ export interface FragmentDescriptor {
 
 export class Fragmenter {
   private data: FragmentDescriptor;
+  private tooltip: { [key: string]: string };
 
   constructor(styles: MultiHighlightStyles) {
     this.data = Object.keys(styles).reduce(
@@ -20,6 +21,7 @@ export class Fragmenter {
       },
       {}
     );
+    this.tooltip = {};
   }
   getDecoratedRanges() {
     const result = [];
@@ -43,15 +45,19 @@ export class Fragmenter {
         return {
           range: this.data[key],
           style: key,
+          tooltip: this.tooltip,
         };
       }
     }
   }
-  add(nick: string, range: FragmentRange) {
+  add(nick: string, range: FragmentRange, label?: string) {
     if (!this.data[nick]) {
       throw Error(`Style ${nick} is undefined`);
     }
     this.data[nick].push(range);
+    if (label) {
+      this.tooltip[nick] = label;
+    }
   }
   private getAbsoluteRanges() {
     let merged: number[] = [];
@@ -88,6 +94,7 @@ export class Fragmenter {
     return {
       range: [start, end],
       styles,
+      tooltip: this.tooltip,
     };
   }
 }

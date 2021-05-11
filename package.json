@@ -39,13 +39,15 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@bit/mui-org.material-ui.tooltip": "^4.9.10",
+    "@material-ui/core": "^4.11.4",
     "clsx": "^1.0.4"
   },
   "peerDependencies": {
     "draft-js": "^0.10.1 || ^0.11.0",
+    "draft-js-simpledecorator": "^1.0.2",
     "react": "^15.5.0 || ^16.0.0-rc",
-    "react-dom": "^15.5.0 || ^16.0.0-rc",
-    "draft-js-simpledecorator": "^1.0.2"
+    "react-dom": "^15.5.0 || ^16.0.0-rc"
   },
   "devDependencies": {
     "@babel/core": "7.12.10",

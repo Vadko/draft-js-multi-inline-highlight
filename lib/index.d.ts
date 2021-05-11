@@ -11,13 +11,14 @@ export interface MultiHighlightRule {
     length?: number;
     style: string;
     matcher: Function;
+    tooltip?: string;
 }
 export interface MultiHighlightConfig {
     rules: MultiHighlightRule[];
     styles: MultiHighlightStyles;
 }
-export declare function LengthMatcher(fragmenter: Fragmenter, length: number, style: string, contentBlock: ContentBlock): void;
-export declare function WordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
-export declare function ExactWordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
-export declare function SentenceMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock): void;
+export declare function LengthMatcher(fragmenter: Fragmenter, length: number, style: string, contentBlock: ContentBlock, tooltip?: string): void;
+export declare function WordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock, tooltip?: string): void;
+export declare function ExactWordMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock, tooltip?: string): void;
+export declare function SentenceMatcher(fragmenter: Fragmenter, items: string[], style: string, contentBlock: ContentBlock, tooltip?: string): void;
 export declare function MultiHighlightDecorator(config: MultiHighlightConfig): any;
