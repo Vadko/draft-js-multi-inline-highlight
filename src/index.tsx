@@ -167,14 +167,15 @@ export function MultiHighlightDecorator(config: MultiHighlightConfig) {
           }
           callback(range.range[0], range.range[1], {
             styling: style,
-            tooltip: range.tooltip[range.styles[0]],
+            tooltip:
+              range.styles.length <= 1
+                ? range.tooltip[range.styles[0]]
+                : range.styles.map((style) => range.tooltip[style]).join(", "),
           });
         }
       } else {
         const singleRanges = fragments.getSimpleRanges();
         if (singleRanges) {
-          console.log("SINGLE RANGE");
-          console.log(singleRanges);
           for (const range of singleRanges.range) {
             callback(range[0], range[1], {
               styling: config.styles[singleRanges.style],
