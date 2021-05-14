@@ -943,144 +943,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bit/mui-org.material-ui.colors@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.colors/-/mui-org.material-ui.colors-4.9.10.tgz#58cec41ff55ad645681ba050b36fe4db96811015"
-  integrity sha1-WM7EH/Va1kVoG6BQs2/k25aBEBU=
-
-"@bit/mui-org.material-ui.grow@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.grow/-/mui-org.material-ui.grow-4.9.10.tgz#4a4d1e80e405e86319c5e7770575c2540f60ad32"
-  integrity sha1-Sk0egOQF6GMZxed3BXXCVA9grTI=
-  dependencies:
-    "@bit/mui-org.material-ui.internal.transitions" "4.9.10"
-    "@bit/mui-org.material-ui.internal.use-fork-ref" "4.9.10"
-    "@bit/mui-org.material-ui.styles" "4.9.10"
-    "@material-ui/types" "^5.0.1"
-    prop-types "^15.7.2"
-    react-transition-group "^4.3.0"
-
-"@bit/mui-org.material-ui.internal.capitalize@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.capitalize/-/mui-org.material-ui.internal.capitalize-4.9.10.tgz#93a1575ac3fa8f0a5978bcb9d80ac6084674bfcb"
-  integrity sha1-k6FXWsP6jwpZeLy52ArGCEZ0v8s=
-
-"@bit/mui-org.material-ui.internal.create-chained-function@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.create-chained-function/-/mui-org.material-ui.internal.create-chained-function-4.9.10.tgz#57faef3298ba13aae406335f25fe3bfcd0680545"
-  integrity sha1-V/rvMpi6E6rkBjNfJf47/NBoBUU=
-
-"@bit/mui-org.material-ui.internal.owner-document@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.owner-document/-/mui-org.material-ui.internal.owner-document-4.9.10.tgz#5e370c98cce17cbf0deb33d612ef238bb96215c5"
-  integrity sha1-XjcMmMzhfL8N6zPWEu8ji7liFcU=
-
-"@bit/mui-org.material-ui.internal.owner-window@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.owner-window/-/mui-org.material-ui.internal.owner-window-4.9.10.tgz#14110fffa680dad101632d1f09fa52aac03a5853"
-  integrity sha1-FBEP/6aA2tEBYy0fCfpSqsA6WFM=
-  dependencies:
-    "@bit/mui-org.material-ui.internal.owner-document" "4.9.10"
-
-"@bit/mui-org.material-ui.internal.set-ref@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.set-ref/-/mui-org.material-ui.internal.set-ref-4.9.10.tgz#06f5f9f09445a04c5cf63e0d46739cf137579e3c"
-  integrity sha1-BvX58JRFoExc9j4NRnOc8TdXnjw=
-
-"@bit/mui-org.material-ui.internal.transitions@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.transitions/-/mui-org.material-ui.internal.transitions-4.9.10.tgz#49101f29af950df416d028baf6a2fc4f80d2aae9"
-  integrity sha1-SRAfKa+VDfQW0Ci69qL8T4DSquk=
-  dependencies:
-    react-transition-group "^4.3.0"
-
-"@bit/mui-org.material-ui.internal.types@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.types/-/mui-org.material-ui.internal.types-4.9.10.tgz#42b4933354d7a1adf4b50fe6e629b7122c1ab5d6"
-  integrity sha1-QrSTM1TXoa30tQ/m5im3EiwatdY=
-  dependencies:
-    "@bit/mui-org.material-ui.styles" "4.9.10"
-    "@material-ui/types" "^5.0.1"
-
-"@bit/mui-org.material-ui.internal.unstable-use-id@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.unstable-use-id/-/mui-org.material-ui.internal.unstable-use-id-4.9.10.tgz#351a48ed90d2769f52e5d622b9d96a1d21a907c1"
-  integrity sha1-NRpI7ZDSdp9S5dYiudlqHSGpB8E=
-
-"@bit/mui-org.material-ui.internal.use-controlled@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.use-controlled/-/mui-org.material-ui.internal.use-controlled-4.9.10.tgz#fc591caa3841f332d5238aa49d96d0189a3f2860"
-  integrity sha1-/FkcqjhB8zLVI4qknZbQGJo/KGA=
-
-"@bit/mui-org.material-ui.internal.use-fork-ref@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.use-fork-ref/-/mui-org.material-ui.internal.use-fork-ref-4.9.10.tgz#fa5f1c62c8a04212b2ae52b44cc0dd07cd147a39"
-  integrity sha1-+l8cYsigQhKyrlK0TMDdB80Uejk=
-  dependencies:
-    "@bit/mui-org.material-ui.internal.set-ref" "4.9.10"
-
-"@bit/mui-org.material-ui.internal.use-is-focus-visible@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.internal.use-is-focus-visible/-/mui-org.material-ui.internal.use-is-focus-visible-4.9.10.tgz#13e499c3eb77fc071601d2d0304fef7770a867e0"
-  integrity sha1-E+SZw+t3/AcWAdLQME/vd3CoZ+A=
-
-"@bit/mui-org.material-ui.popper@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.popper/-/mui-org.material-ui.popper-4.9.10.tgz#daf60d546b1211211f1cbce265c9d069b9099f8b"
-  integrity sha1-2vYNVGsSESEfHLziZcnQabkJn4s=
-  dependencies:
-    "@bit/mui-org.material-ui.internal.create-chained-function" "4.9.10"
-    "@bit/mui-org.material-ui.internal.owner-window" "4.9.10"
-    "@bit/mui-org.material-ui.internal.set-ref" "4.9.10"
-    "@bit/mui-org.material-ui.internal.use-fork-ref" "4.9.10"
-    "@bit/mui-org.material-ui.portal" "4.9.10"
-    "@material-ui/styles" "^4.9.10"
-    "@material-ui/utils" "^4.9.6"
-    popper.js "^1.16.1-lts"
-    prop-types "^15.7.2"
-
-"@bit/mui-org.material-ui.portal@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.portal/-/mui-org.material-ui.portal-4.9.10.tgz#2d84c7e8e5cc0605a9686ee6663c5be4de07a639"
-  integrity sha1-LYTH6OXMBgWpaG7mZjxb5N4Hpjk=
-  dependencies:
-    "@bit/mui-org.material-ui.internal.set-ref" "4.9.10"
-    "@bit/mui-org.material-ui.internal.use-fork-ref" "4.9.10"
-    "@material-ui/utils" "^4.9.6"
-    prop-types "^15.7.2"
-
-"@bit/mui-org.material-ui.styles@4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.styles/-/mui-org.material-ui.styles-4.9.10.tgz#6e837b31bd0c00bf7f00b428b0e572201160872c"
-  integrity sha1-boN7Mb0MAL9/ALQosOVyIBFghyw=
-  dependencies:
-    "@bit/mui-org.material-ui.colors" "4.9.10"
-    "@bit/mui-org.material-ui.internal.types" "4.9.10"
-    "@material-ui/styles" "^4.9.10"
-    "@material-ui/system" "^4.9.10"
-    "@material-ui/types" "^5.0.1"
-    "@material-ui/utils" "^4.9.6"
-
-"@bit/mui-org.material-ui.tooltip@^4.9.10":
-  version "4.9.10"
-  resolved "https://node.bit.dev/mui-org.material-ui.tooltip/-/mui-org.material-ui.tooltip-4.9.10.tgz#ca24b9acfdc5fd8265bc7fc48faecc67dc5c9bbc"
-  integrity sha1-yiS5rP3F/YJlvH/Ej67MZ9xcm7w=
-  dependencies:
-    "@bit/mui-org.material-ui.grow" "4.9.10"
-    "@bit/mui-org.material-ui.internal.capitalize" "4.9.10"
-    "@bit/mui-org.material-ui.internal.set-ref" "4.9.10"
-    "@bit/mui-org.material-ui.internal.transitions" "4.9.10"
-    "@bit/mui-org.material-ui.internal.types" "4.9.10"
-    "@bit/mui-org.material-ui.internal.unstable-use-id" "4.9.10"
-    "@bit/mui-org.material-ui.internal.use-controlled" "4.9.10"
-    "@bit/mui-org.material-ui.internal.use-fork-ref" "4.9.10"
-    "@bit/mui-org.material-ui.internal.use-is-focus-visible" "4.9.10"
-    "@bit/mui-org.material-ui.popper" "4.9.10"
-    "@bit/mui-org.material-ui.styles" "4.9.10"
-    "@material-ui/utils" "^4.9.6"
-    clsx "^1.0.4"
-    prop-types "^15.7.2"
-
 "@changesets/apply-release-plan@^4.0.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@changesets/apply-release-plan/-/apply-release-plan-4.1.0.tgz#ec67c9a0f507c19740d9344766e37dd51fc981ee"
@@ -1393,7 +1255,7 @@
     react-is "^16.8.0 || ^17.0.0"
     react-transition-group "^4.4.0"
 
-"@material-ui/styles@^4.11.4", "@material-ui/styles@^4.9.10":
+"@material-ui/styles@^4.11.4":
   version "4.11.4"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.11.4.tgz#eb9dfccfcc2d208243d986457dff025497afa00d"
   integrity sha512-KNTIZcnj/zprG5LW0Sao7zw+yG3O35pviHzejMdcSGCdWbiO8qzRgOYL8JAxAsWBKOKYwVZxXtHWaB5T2Kvxew==
@@ -1415,7 +1277,7 @@
     jss-plugin-vendor-prefixer "^10.5.1"
     prop-types "^15.7.2"
 
-"@material-ui/system@^4.11.3", "@material-ui/system@^4.9.10":
+"@material-ui/system@^4.11.3":
   version "4.11.3"
   resolved "https://registry.yarnpkg.com/@material-ui/system/-/system-4.11.3.tgz#466bc14c9986798fd325665927c963eb47cc4143"
   integrity sha512-SY7otguNGol41Mu2Sg6KbBP1ZRFIbFLHGK81y4KYbsV2yIcaEPOmsCK6zwWlp+2yTV3J/VwT6oSBARtGIVdXPw==
@@ -1425,12 +1287,12 @@
     csstype "^2.5.2"
     prop-types "^15.7.2"
 
-"@material-ui/types@5.1.0", "@material-ui/types@^5.0.1":
+"@material-ui/types@5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-5.1.0.tgz#efa1c7a0b0eaa4c7c87ac0390445f0f88b0d88f2"
   integrity sha512-7cqRjrY50b8QzRSYyhSpx4WRw2YuO0KKIGQEVk5J8uoz2BanawykgZGoWEqKm7pVIbzFDN0SpPcVV4IhOFkl8A==
 
-"@material-ui/utils@^4.11.2", "@material-ui/utils@^4.9.6":
+"@material-ui/utils@^4.11.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.11.2.tgz#f1aefa7e7dff2ebcb97d31de51aecab1bb57540a"
   integrity sha512-Uul8w38u+PICe2Fg2pDKCaIG7kOyhowZ9vjiC1FsVwPABTW8vPPKfF6OvxRq3IiBaI1faOJmgdvMG7rMJARBhA==
@@ -4733,11 +4595,6 @@ popper.js@1.16.1-lts:
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1-lts.tgz#cf6847b807da3799d80ee3d6d2f90df8a3f50b05"
   integrity sha512-Kjw8nKRl1m+VrSFCoVGPph93W/qrSO7ZkqPpTf7F4bk/sqcfWK019dWBUpE/fBOsOQY1dks/Bmcbfn1heM/IsA==
 
-popper.js@^1.16.1-lts:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
-
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -4861,7 +4718,7 @@ react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.3:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-transition-group@^4.3.0, react-transition-group@^4.4.0:
+react-transition-group@^4.4.0:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
   integrity sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
