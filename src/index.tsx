@@ -51,18 +51,17 @@ export function LengthMatcher(
   const text = contentBlock.getText();
   const wordsLongerThan = text
     .split(" ")
-    .map((word) =>
-      word.replace(
+    .map((word) => ({
+      replaced: word.replace(
         /(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g,
         ""
-      )
-    )
-    .filter((word) => word.length > length);
-  console.log(text);
-  console.log(wordsLongerThan);
-  wordsLongerThan.forEach((word) => {
+      ),
+      word,
+    }))
+    .filter((word) => word.replaced.length > length);
+  wordsLongerThan.forEach(({ word, replaced }) => {
     const start = text.indexOf(word);
-    const end = start + word.length;
+    const end = start + replaced.length;
     if (start !== -1) {
       fragmenter.add(style, [start, end], tooltip);
     }
