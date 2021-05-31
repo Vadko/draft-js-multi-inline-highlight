@@ -51,6 +51,12 @@ export function LengthMatcher(
   const text = contentBlock.getText();
   const wordsLongerThan = text
     .split(" ")
+    .map((word) =>
+      word.replace(
+        /(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g,
+        ""
+      )
+    )
     .filter((word) => word.length > length);
   wordsLongerThan.forEach((word) => {
     const start = text.indexOf(word);
