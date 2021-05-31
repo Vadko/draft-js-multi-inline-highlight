@@ -58,6 +58,8 @@ export function LengthMatcher(
       )
     )
     .filter((word) => word.length > length);
+  console.log(text);
+  console.log(wordsLongerThan);
   wordsLongerThan.forEach((word) => {
     const start = text.indexOf(word);
     const end = start + word.length;
@@ -161,8 +163,6 @@ export function MultiHighlightDecorator(config: MultiHighlightConfig) {
       }
       if (fragments.isMultiply()) {
         const ranges = fragments.getDecoratedRanges();
-        console.log("MULTI RANGE");
-        console.log(ranges);
         for (const range of ranges) {
           let style = {};
           for (const s of range.styles) {
