@@ -53,14 +53,14 @@ export function LengthMatcher(
     .split(" ")
     .map((word) => ({
       replaced: word.replace(
-        /(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g,
+        /(~|\(|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|\)|=)/g,
         ""
       ),
       word,
     }))
     .filter((word) => word.replaced.length > length);
   wordsLongerThan.forEach(({ word, replaced }) => {
-    const start = text.indexOf(word);
+    const start = text.indexOf(replaced);
     const end = start + replaced.length;
     if (start !== -1) {
       fragmenter.add(style, [start, end], tooltip);
