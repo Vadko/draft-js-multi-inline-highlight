@@ -41,6 +41,25 @@ interface Component {
   children: string;
 }
 
+function hasNumber(myString: string): boolean {
+    return /\d/.test(myString);
+}
+
+function validateEmail(email: string): boolean {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return !!re.test(String(email).toLowerCase());
+}
+
+function validURL(str: string): boolean {
+    var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+    return !!pattern.test(str);
+}
+
 export function LengthMatcher(
   fragmenter: Fragmenter,
   length: number,
@@ -51,6 +70,7 @@ export function LengthMatcher(
   const text = contentBlock.getText();
   const wordsLongerThan = text
     .split(" ")
+    .filter(string => !hasNumber(string) && !validateEmail(string) && !validURL(string))
     .map((word) => ({
       replaced: word.replace(
         /(~|\(|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|\)|=)/g,
